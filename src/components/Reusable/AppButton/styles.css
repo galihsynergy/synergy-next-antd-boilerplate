@@ -1,0 +1,171 @@
+.ant-btn.ant-btn-text.app-btn {
+  @apply h-auto w-auto inline-flex items-center;
+  &.app-btn-primary {
+    @apply bg-button-primary-bg text-button-primary-fg border-button-primary-bg rounded-md;
+  }
+  &.app-btn-primary:hover {
+    @apply bg-button-primary-bg_hover text-button-primary-fg;
+  }
+  &.app-btn-primary:disabled {
+    @apply rounded-md bg-button-primary-bg_disabled text-button-fg_disabled border-button-border_disabled;
+  }
+
+  &.app-btn-secondary-color {
+    @apply rounded-md bg-button-secondary-color-bg border-button-secondary-color-border text-button-secondary-color-fg;
+  }
+  &.app-btn-secondary-color:hover {
+    @apply rounded-md text-button-secondary-color-fg
+     bg-button-secondary-color-bg_hover;
+  }
+  &.app-btn-secondary-color:disabled {
+    @apply rounded-md bg-button-secondary-color-bg_disabled text-button-fg_disabled border-button-border_disabled;
+  }
+
+  &.app-btn-secondary-gray {
+    @apply rounded-md bg-button-secondary-bg text-button-secondary-fg border-button-secondary-border;
+  }
+  &.app-btn-secondary-gray:hover {
+    @apply rounded-md bg-button-secondary-bg_hover border-button-secondary-border;
+  }
+  &.app-btn-secondary-gray:disabled {
+    @apply rounded-md bg-button-secondary-bg_disabled text-button-fg_disabled border-button-border_disabled;
+  }
+
+  &.app-btn-tertiary-gray {
+    @apply rounded-md bg-bg-primary text-button-secondary-fg;
+  }
+  &.app-btn-tertiary-gray:hover {
+    @apply rounded-md bg-bg-primary_hover text-button-secondary-fg;
+  }
+  &.app-btn-tertiary-gray:disabled {
+    @apply rounded-md text-button-fg_disabled;
+  }
+
+  &.app-btn-tertiary-color {
+    @apply rounded-md bg-bg-primary text-button-primary-bg;
+  }
+  &.app-btn-tertiary-color:hover {
+    @apply rounded-md bg-button-secondary-color-bg_hover text-button-primary-bg_hover;
+  }
+  &.app-btn-tertiary-color:disabled {
+    @apply rounded-md text-button-fg_disabled;
+  }
+
+  &.app-btn-link-gray {
+    @apply rounded-md bg-transparent text-button-secondary-fg;
+  }
+  &.app-btn-link-gray:hover {
+    @apply rounded-md text-button-secondary-fg;
+  }
+  &.app-btn-link-gray:disabled {
+    @apply rounded-md text-button-fg_disabled;
+  }
+
+  &.app-btn-link-color {
+    @apply rounded-md bg-transparent text-button-secondary-color-fg;
+  }
+  &.app-btn-link-color:hover {
+    @apply rounded-md text-button-secondary-color-fg;
+  }
+  &.app-btn-link-color:disabled {
+    @apply rounded-md text-button-fg_disabled;
+  }
+
+  &.app-btn-link-warning {
+    @apply rounded-md bg-transparent text-text-warning-primary;
+  }
+  &.app-btn-link-warning:hover {
+    @apply rounded-md text-text-warning-primary;
+  }
+  &.app-btn-link-warning:disabled {
+    @apply rounded-md text-button-fg_disabled;
+  }
+
+  &.app-btn-destructive {
+    @apply rounded-md bg-button-primary-error-bg text-button-primary-error-fg;
+  }
+  &.app-btn-destructive:hover {
+    @apply rounded-md bg-button-primary-error-bg_hover text-button-primary-fg;
+  }
+  &.app-btn-destructive:disabled {
+    @apply rounded-md bg-button-primary-error-bg_disabled text-button-fg_disabled border-button-border_disabled;
+  }
+
+  &.app-btn-destructive-secondary {
+    @apply rounded-md bg-button-secondary-error-bg border-button-secondary-error-border text-button-secondary-error-fg;
+  }
+  &.app-btn-destructive-secondary:hover {
+    @apply rounded-md bg-button-secondary-error-bg_hover border-button-secondary-error-border text-button-secondary-error-fg;
+  }
+  &.app-btn-destructive-secondary:disabled {
+    @apply rounded-md bg-button-secondary-error-bg_disabled text-button-fg_disabled border-button-border_disabled;
+  }
+  &.app-btn-link-destructive {
+    @apply text-[#B42318] hover:text-[#912018] hover:bg-transparent disabled:text-fg-disabled;
+  }
+
+  &.app-btn-warning {
+    @apply bg-utility-warning-500 text-white border-none rounded-md;
+  }
+  &.app-btn-warning:hover {
+    @apply hover:bg-utility-warning-400 text-white;
+  }
+  &.app-btn-warning:disabled {
+    @apply rounded-md bg-button-primary-bg_disabled text-button-fg_disabled border-button-border_disabled;
+  }
+
+  &.app-btn-gray-blue {
+    @apply bg-utility-gray-blue-500 text-white border-none rounded-md;
+  }
+  &.app-btn-gray-blue:hover {
+    @apply hover:bg-utility-gray-blue-400 text-white;
+  }
+  &.app-btn-gray-blue:disabled {
+    @apply rounded-md bg-button-primary-bg_disabled text-button-fg_disabled border-button-border_disabled;
+  }
+
+  &.app-btn-success-secondary {
+    @apply rounded-md bg-button-secondary-success-bg border-button-secondary-success-border text-button-secondary-success-fg;
+  }
+  &.app-btn-success-secondary:hover {
+    @apply rounded-md bg-button-secondary-success-bg_hover border-button-secondary-success-border text-button-secondary-success-fg;
+  }
+
+  &.app-btn-xs {
+    @apply text-xs py-sm px-md;
+  }
+  &.app-btn-sm {
+    @apply text-sm py-md px-lg h-[36px];
+  }
+  &.app-btn-md {
+    @apply text-sm py-2.5 px-3.5 h-[40px];
+  }
+  &.app-btn-lg {
+    @apply text-md py-2.5 px-xl h-[44px];
+  }
+  &.app-btn-xl {
+    @apply text-md py-lg px-[18px] h-[48px];
+  }
+  &.app-btn-2xl {
+    @apply text-lg py-xl px-[22px] h-[52px];
+  }
+
+  &.app-btn-icon-xs {
+    @apply p-sm inline-flex items-center h-[32px] w-[32px];
+  }
+  &.app-btn-icon-sm {
+    @apply p-md inline-flex items-center h-[36px] w-[36px];
+  }
+  &.app-btn-icon-md {
+    @apply p-2.5  inline-flex items-center h-[40px] w-[40px];
+  }
+  &.app-btn-icon-lg {
+    @apply p-lg inline-flex items-center h-[44px] w-[44px];
+  }
+  &.app-btn-icon-xl {
+    @apply p-[14px] inline-flex items-center h-[48px] w-[48px];
+  }
+  &.app-btn-icon-2xl {
+    @apply p-xl inline-flex items-center h-[56px] w-[56px];
+  }
+}
